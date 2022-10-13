@@ -16,12 +16,12 @@ body {
 }
 
 h1 {
-	font-size: 20px;
+	font-size: 7vw;
 	margin-top: 0;
 }
 
 a {
-	color: rgba(165, 55, 253, 0.6);
+	color: #f00; 
 }
 
       h2 {
@@ -32,6 +32,9 @@ a {
 
       .bio-wrapper {
 	      font-size: 24px;
+	      overflow: hidden;
+	      margin: 0 auto 40px;
+	      max-width: 960px;
 	      overflow: hidden;
       }
 
@@ -45,16 +48,25 @@ a {
       }
 
       .bio-box {
-	      border: 1px solid rgba(0, 176, 106);
+	      border: 1px dotted #00b064;
 	      float: left;
-	      width: 25%;
+	      width: 23%;
 	      padding: 2%;
+	      margin: 40px 1% 0;
 	      box-sizing: border-box;
+	      border-color: #00b064 #00b064 red;
 	      font-size: 1rem;
       }
 
       .bio-box h3 {
 	      font-size: 1.5em;
+	      color: #fff;
+	      margin: -40px 0 1em;
+	      text-align: center;
+      }
+
+      .bio-box img {
+	      width: 100%;
       }
 
       .bio-copy a {
@@ -63,16 +75,27 @@ a {
 
       .bio-copy {
 	      font-size: 1em;
+	      line-height: 1.5;
       }
 
       /* SOCIAL STYLES */
 
       .social-link {
-	      background: rgba(150, 150, 150, 0.6);
-	      color: rgba(30 135, 195, 0.2);
-	      height: 35px;
-	      width: 36px;
+	      background: rgba(150, 150, 150, 0.5);
+	      border-radius: 99px;
+	      box-sizing: border-box;
+	      color: #fff;
 	      display: inline-block;
+	      font-family: helvetica, arial, sans;
+	      font-size: 1rem;
+	      font-weight: bold;
+	      height: 2.5em;
+	      line-height: 1;
+	      padding-top: 0.85em;
+	      text-align: center;
+	      text-decoration: none;
+	      vertical-align: middle;
+	      width: 2.5em;
       }
 
       .social-list {
@@ -83,6 +106,7 @@ a {
 
       .social-list > li {
 	      display: inline-block;
+	      margin: 0 0.5em;
       }
 
       .show {
@@ -103,13 +127,13 @@ a {
 			<h1>I'm an h1</h1>
 			<ul class="social-list">
 				<li>
-					<a href="https://example.com/">Link</a>
+					<a href="https://example.com/" class="social-link">Fb</a>
 				</li>
 				<li>
-					<a href="https://example.com/">Link</a>
+					<a href="https://example.com/" class="social-link">Tw</a>
 				</li>
 				<li>
-					<a href="https://example.com/">Link</a>
+					<a href="https://example.com/" class="social-link">Gh</a>
 				</li>
 			</ul>
 		</div>
@@ -118,8 +142,9 @@ a {
 
 		<div class="bio-wrapper">
 			<div class="bio-box">
+				<img src="https://placekitten.com/g/400/400">
 				<h3>Michael Hartl</h3>
-				<a href="https://twitter.com/mhartl" class="social-link">here</a>
+				<a href="https://twitter.com/mhartl" class="social-link">Tw</a>
 				<div class="bio-copy">
 					<p>
 					Known for his dazzling charm, rapier wit, and unrivaled humility,
@@ -137,8 +162,9 @@ a {
 				</div>
 			</div>
 			<div class="bio-box">
+				<img src="https://placekitten.com/400/400">
 				<h3>Lee Donahoe</h3>
-				<a href="https://twitter.com/leedonahoe" class="social-link">here</a>
+				<a href="https://twitter.com/leedonahoe" class="social-link">Tw</a>
 				<div class="bio-copy">
 					<p>
 					When he's not literally swimming with sharks or hunting powder stashes on
@@ -149,8 +175,9 @@ a {
 				</div>
 			</div>
 			<div class="bio-box">
+				<img src="https://placekitten.com/400/400">
 				<h3>Nick Merwin</h3>
-				<a href="https://twitter.com/nickmerwin" class="social-link">here</a>
+				<a href="https://twitter.com/nickmerwin" class="social-link">Tw</a>
 				<div class="bio-copy">
 					<p>
 					You may have seen him shredding guitar live with Capital Cities on Jimmy
@@ -162,6 +189,7 @@ a {
 			</div>
 			<div class="bio-box">
 				<div class="bio-copy">
+					<img src="https://placekitten.com/400/400">
 					<h3>??</h3>
 					<p>
 					The Future
@@ -180,12 +208,12 @@ a {
 		</p>
 
 		<h3>Background</h3>
-		
+
 		<p> Learn Enough to be Dangerous is an outgrowth of <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a> and the
 		<a href="https://www.softcover.io/">Softcover publishing platform</a>. This page is part of the sample site for 
 		<a href="https://learnenough.com/css-tutorial/"><em>Learn Enough CSS and Layout to be Dangerous<em></a>, which teaches the basics
-		of <strong>C</strong>ascading <strong>S</strong>tyle <strong>S</strong>heets, the language that allows the web to be styled.
-		Other related tutorials could be found at <a href="https://learnenough.com/">learnenough.com</a>.
+				of <strong>C</strong>ascading <strong>S</strong>tyle <strong>S</strong>heets, the language that allows the web to be styled.
+				Other related tutorials could be found at <a href="https://learnenough.com/">learnenough.com</a>.
 		</p>
 	</body>
 </html>
