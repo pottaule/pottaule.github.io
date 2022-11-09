@@ -6,7 +6,16 @@ html {
 	padding: 0 30px;
 }
 body {
+	display: flex;
+	flex-direction: column;
 	font-family: helvetica, arial, sans;
+	min-height: 100vh;
+}
+.content-container {
+	display: flex;
+	flex: 1 1 auto;
+	padding-top: 10vh;
+	width: 100%;
 }
 h1 {
 	font-size: 7vw;
@@ -24,6 +33,7 @@ a {
 }
 p {
 	line-height: 1.5;
+	margin: 0.75em 0;
 }
 
 /* HERO STYLES */
@@ -31,7 +41,7 @@ p {
 	background-color: #c7dbfc;
 	background-size: cover;
 	box-sizing: border-box;
-	height: 100vh;
+	height: 90vh;
 	padding-top: 10vh;
 }
 .full-hero:after {
@@ -240,15 +250,44 @@ p {
 	text-align: center;
 }
 .home-callout {
+	align-items: center;
 	background-color: #000;
 	color: #fff;
+	display: flex;
 	padding: 7vh 0;
 }
+.home-callout h3 {
+	color: inherit;
+	margin-top: 1em;
+}
 .callout-title {
+	flex: 1;
 	font-size: 5.75vh;
 	text-align: right;
 	text-transform: uppercase;
 }
 .callout-copy {
+	flex: 0 0 45em;
 	font-size: 0.8rem;
+	padding: 03vw;
+}
+.col-three {
+	display: flex;
+	flex: 1;
+}
+.col {
+	box-sizing: border-box;
+	padding: 2em;
+}
+.col-three .col ~ .col {
+	border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+.col-three .col-nav {
+	flex: 0 1 15em;
+}
+.col-three .col-content {
+	flex: 1;
+}
+.col-three .col-aside {
+	flex: 0 1 20em;
 }
